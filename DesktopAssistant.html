@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="" xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Desktop Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="home">
+        <div class="weather">
+            <div class="temperature">
+                <h4 id="temp">Temperature</h4>
+            </div>
+
+            <div class="other">
+                <h4 id="feels-like">Feels like</h4>
+                <h4 id="precipitation">Precipition</h4>
+                <h4 id="humidity">Humidity</h4>
+                <h4 id="wind">Wind</h4>
+            </div>
+        </div>
+
+        <div class="today">
+            <h1 id="time">Time</h1>
+            <h3 id="date">Data</h3>
+        </div>
+    </div>
+
+    <div id="hourly">
+        <div id="info">
+            <div id="daily-highs">
+                <h4 id="high">High</h4>
+                <h4 id="low">Low</h4>
+            </div>
+
+            <div id="other-info">
+                <h4 id="sunrise">Sunrise</h4>
+                <h4 id="sunset">Sunset</h4>
+                <h4 id="wind-speed-high">Wind speed high</h4>
+            </div>
+        </div>
+
+        <div id="forecast">
+            <div id="temperatures">
+                <div id="ho1">
+                    <img id="img1" class="icon" src="resources/default">
+                    <h2 id="tp1">30</h2>
+                    <h2 id="tm1">11:00</h2>
+                </div>
+                <div id="ho2">
+                    <img id="img2" class="icon" src="resources/default">
+                    <h2 id="tp2">30</h2>
+                    <h2 id="tm2">11:00</h2>
+                </div>
+                <div id="ho3">
+                    <img id="img3" class="icon" src="resources/default">
+                    <h2 id="tp3">30</h2>
+                    <h2 id="tm3">11:00</h2>
+                </div>
+                <div id="ho4">
+                    <img id="img4" class="icon" src="resources/default">
+                    <h2 id="tp4">30</h2>
+                    <h2 id="tm4">11:00</h2>
+                </div>
+                <div id="ho5">
+                    <img id="img5" class="icon" src="resources/default">
+                    <h2 id="tp5">30</h2>
+                    <h2 id="tm5">11:00</h2>
+                </div>
+            </div>
+
+            <div id="next-hour">
+                <button id="hour-left">L</button>
+                <button id="hour-right">R</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="daily">
+        <div id="daily-temps">
+            <div id="day1" class="day">
+                <h2 id="week-day1">Sun</h2>
+                <img id="img-day1" class="icon" src="resources/default">
+                <h2 id="day1-high" class="high-low">40</h2>
+                <h2 id="day1-low" class="high-low">40</h2>
+            </div>
+
+            <div id="day2" class="day">
+                <h2 id="week-day2">Sun</h2>
+                <img id="img-day2" class="icon" src="resources/default">
+                <h2 id="day2-high" class="high-low">40</h2>
+                <h2 id="day2-low" class="high-low">40</h2>
+            </div>
+
+            <div id="day3" class="day">
+                <h2 id="week-day3">Sun</h2>
+                <img id="img-day3" class="icon" src="resources/default">
+                <h2 id="day3-high" class="high-low">40</h2>
+                <h2 id="day3-low" class="high-low">40</h2>
+            </div>
+
+            <div id="day4" class="day">
+                <h2 id="week-day4">Sun</h2>
+                <img id="img-day4" class="icon" src="resources/default">
+                <h2 id="day4-high" class="high-low">40</h2>
+                <h2 id="day4-low" class="high-low">40</h2>
+            </div>
+
+            <div id="day5" class="day">
+                <h2 id="week-day5">Sun</h2>
+                <img id="img-day5" class="icon" src="resources/default">
+                <h2 id="day5-high" class="high-low">40</h2>
+                <h2 id="day5-low" class="high-low">40</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="alarms">
+        <div id="change-settings">
+            <img src="resources/gear.png" id="settings-icon">
+            <input type="time" id="alarm">
+        </div>
+
+        <h2 id="countdown">Countdown</h2>
+        <button id="stop-alarm">Cancel</button>
+
+        <audio src="resources/ruffmeow.mp3" , id="alarm-noise">
+            <source src="resources/ruffmeow.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div id="alarm-settings">
+        <label id="repeat-label">Repeat</label>
+
+        <select id="repeat">
+            <option value="never">Never</option>
+            <option value="weekdays">Weekdays</option>
+            <option value="weekends">Weekends</option>
+            <option value="every day">Always</option>
+        </select>
+
+        <label id="tone-label">Audio</label>
+
+        <select id="tone">
+            <option value="cats dog">Meow Ruff</option>
+            <option value="viva la vida">Viva la vida</option>
+        </select>
+
+    </div>
+
+    <div id="switch-tab">
+        <button id="tab-left">left</button>
+        <button id="tab-right">right</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

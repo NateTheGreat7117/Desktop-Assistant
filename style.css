@@ -1,0 +1,266 @@
+div {
+    display: grid;
+}
+
+body{
+    background-image: url("ocean2");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.weather {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+#temp {
+    margin: 0px;
+    margin-left: 20px;
+    font-size: 75px;
+    font-weight: lighter;
+}
+
+#feels-like,
+#precipitation,
+#humidity,
+#wind {
+    margin: 0px;
+    margin-right: 10px;
+    margin-left: 110px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.today {
+    padding-top: 15px;
+}
+
+#time {
+    margin: 0px;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+#date {
+    margin: 0px;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+#info {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+#daily-highs {
+    font-size: 65px;
+}
+
+#other-info {
+    display: block;
+}
+
+#high,
+#low {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: lighter;
+}
+
+#sunrise,
+#sunset,
+#wind-speed-high {
+    margin: 0px;
+    margin-right: 10px;
+    margin-left: 60px;
+    height: 40px;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+#temperatures {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
+    padding-bottom: 0px;
+    background: rgba(26, 144, 190, 0.8);
+}
+
+#next-hour {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hour-left,
+#hour-right {
+    position: absolute;
+    background-color: transparent;
+    bottom: 55px;
+    width: 35px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#hour-left {
+    left: 110px;
+}
+
+#hour-right {
+    right: 110px;
+}
+
+.icon {
+    height: 75px;
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+
+#tp1,
+#tp2,
+#tp3,
+#tp4,
+#tp5 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+}
+
+#tm1,
+#tm2,
+#tm3,
+#tm4,
+#tm5 {
+    margin-top: 0px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#daily-temps {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 75px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 15px;
+    background: rgba(26, 144, 190, 0.8);
+    text-align: center;
+}
+
+.day {
+    display: block;
+}
+
+img-day1,
+img-day2,
+img-day3,
+img-day4,
+img-day5 {
+    margin-bottom: 30px;
+}
+
+.high-low {
+    margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+}
+
+#change-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#settings-icon {
+    margin-right: 20px;
+    width: 30px;
+}
+
+#settings-icon:hover {
+    opacity: 0.5px;
+}
+
+#alarm {
+    margin: 0px;
+    width: 400px;
+    border: none;
+    background: none;
+    font-size: 60px;
+}
+
+#countdown {
+    margin: 0px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 45px;
+}
+
+#stop-alarm {
+    margin: 0px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(19, 148, 199);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#alarm-settings {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#repeat-label,
+#tone-label {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#repeat,
+#tone {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: none;
+    border: none;
+    font-size: 35px;
+}
+
+#repeat *,
+#tone * {
+    font-size: 28px;
+    background-color: none;
+    font-style: italic;
+}
+
+#switch-tab {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tab-left,
+#tab-right {
+    position: absolute;
+    background-color: rgb(117, 161, 211);
+    bottom: 20px;
+    width: 85px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#tab-left {
+    left: 20px;
+}
+
+#tab-right {
+    right: 20px;  
+}
